@@ -76,7 +76,7 @@ const graduates = [
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
 
-const uniMapped = graduates.map(function(uni){
+const uniMapped = graduates.map((uni)=>{
   return uni.university;
 })
 const universities = uniMapped.sort();
@@ -130,7 +130,7 @@ The zoos want to display both the scientific name and the animal name in front o
 
 */
 const displayNames = [];
-zooAnimals.forEach((curVal) => {
+zooAnimals.forEach((curVal)=>{
   return displayNames.push(`Name:${curVal.animal_name}, Scientific Name:${curVal.scientific_name}.`);
 })
 console.log(displayNames);
